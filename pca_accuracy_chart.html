@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.1.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-4a0dd37781c2700593867f0617b41a24"}, "mark": {"type": "line", "interpolate": "monotone"}, "encoding": {"color": {"field": "Metric", "title": "Distance Metric", "type": "nominal"}, "opacity": {"condition": {"param": "param_8dd6cc3e755d3bc0", "value": 1}, "value": 0.15}, "tooltip": [{"field": "Metric", "type": "nominal"}, {"field": "k", "type": "quantitative"}, {"field": "Accuracy", "format": ".2%", "type": "quantitative"}], "x": {"axis": {"values": [1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320, 330, 340, 350, 360]}, "field": "k", "scale": {"domain": [1, 360]}, "title": "Number of Components (k)", "type": "quantitative"}, "y": {"axis": {"format": "%"}, "field": "Accuracy", "scale": {"domain": [0, 1]}, "title": "Accuracy", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_8dd6cc3e755d3bc0", "select": {"type": "point", "fields": ["Metric"]}, "bind": {"input": "select", "options": [null, "Euclidean", "Cosine", "Mahalanobis"], "labels": ["All", "Euclidean", "Cosine", "Mahalanobis"], "name": "Metric: "}}], "title": "PCA Recognition Accuracy by Different Distance Metrics", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json", "datasets": {"data-4a0dd37781c2700593867f0617b41a24": [{"k": 1, "Metric": "Euclidean", "Accuracy": 0.1}, {"k": 10, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 20, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 30, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 40, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 50, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 60, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 70, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 80, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 90, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 100, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 110, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 120, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 130, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 140, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 150, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 160, "Metric": "Euclidean", "Accuracy": 0.95}, {"k": 170, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 180, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 190, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 200, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 210, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 220, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 230, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 240, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 250, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 260, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 270, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 280, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 290, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 300, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 310, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 320, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 330, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 340, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 350, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 360, "Metric": "Euclidean", "Accuracy": 0.925}, {"k": 1, "Metric": "Cosine", "Accuracy": 0.05}, {"k": 10, "Metric": "Cosine", "Accuracy": 0.925}, {"k": 20, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 30, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 40, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 50, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 60, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 70, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 80, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 90, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 100, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 110, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 120, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 130, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 140, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 150, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 160, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 170, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 180, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 190, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 200, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 210, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 220, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 230, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 240, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 250, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 260, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 270, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 280, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 290, "Metric": "Cosine", "Accuracy": 0.925}, {"k": 300, "Metric": "Cosine", "Accuracy": 0.925}, {"k": 310, "Metric": "Cosine", "Accuracy": 0.925}, {"k": 320, "Metric": "Cosine", "Accuracy": 0.925}, {"k": 330, "Metric": "Cosine", "Accuracy": 0.925}, {"k": 340, "Metric": "Cosine", "Accuracy": 0.925}, {"k": 350, "Metric": "Cosine", "Accuracy": 0.925}, {"k": 360, "Metric": "Cosine", "Accuracy": 0.95}, {"k": 1, "Metric": "Mahalanobis", "Accuracy": 0.1}, {"k": 10, "Metric": "Mahalanobis", "Accuracy": 0.9}, {"k": 20, "Metric": "Mahalanobis", "Accuracy": 0.925}, {"k": 30, "Metric": "Mahalanobis", "Accuracy": 0.925}, {"k": 40, "Metric": "Mahalanobis", "Accuracy": 0.9}, {"k": 50, "Metric": "Mahalanobis", "Accuracy": 0.875}, {"k": 60, "Metric": "Mahalanobis", "Accuracy": 0.85}, {"k": 70, "Metric": "Mahalanobis", "Accuracy": 0.85}, {"k": 80, "Metric": "Mahalanobis", "Accuracy": 0.85}, {"k": 90, "Metric": "Mahalanobis", "Accuracy": 0.85}, {"k": 100, "Metric": "Mahalanobis", "Accuracy": 0.85}, {"k": 110, "Metric": "Mahalanobis", "Accuracy": 0.85}, {"k": 120, "Metric": "Mahalanobis", "Accuracy": 0.825}, {"k": 130, "Metric": "Mahalanobis", "Accuracy": 0.8}, {"k": 140, "Metric": "Mahalanobis", "Accuracy": 0.75}, {"k": 150, "Metric": "Mahalanobis", "Accuracy": 0.75}, {"k": 160, "Metric": "Mahalanobis", "Accuracy": 0.725}, {"k": 170, "Metric": "Mahalanobis", "Accuracy": 0.725}, {"k": 180, "Metric": "Mahalanobis", "Accuracy": 0.7}, {"k": 190, "Metric": "Mahalanobis", "Accuracy": 0.675}, {"k": 200, "Metric": "Mahalanobis", "Accuracy": 0.625}, {"k": 210, "Metric": "Mahalanobis", "Accuracy": 0.575}, {"k": 220, "Metric": "Mahalanobis", "Accuracy": 0.55}, {"k": 230, "Metric": "Mahalanobis", "Accuracy": 0.55}, {"k": 240, "Metric": "Mahalanobis", "Accuracy": 0.5}, {"k": 250, "Metric": "Mahalanobis", "Accuracy": 0.5}, {"k": 260, "Metric": "Mahalanobis", "Accuracy": 0.45}, {"k": 270, "Metric": "Mahalanobis", "Accuracy": 0.475}, {"k": 280, "Metric": "Mahalanobis", "Accuracy": 0.475}, {"k": 290, "Metric": "Mahalanobis", "Accuracy": 0.4}, {"k": 300, "Metric": "Mahalanobis", "Accuracy": 0.4}, {"k": 310, "Metric": "Mahalanobis", "Accuracy": 0.35}, {"k": 320, "Metric": "Mahalanobis", "Accuracy": 0.35}, {"k": 330, "Metric": "Mahalanobis", "Accuracy": 0.375}, {"k": 340, "Metric": "Mahalanobis", "Accuracy": 0.375}, {"k": 350, "Metric": "Mahalanobis", "Accuracy": 0.5}, {"k": 360, "Metric": "Mahalanobis", "Accuracy": 0.725}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
