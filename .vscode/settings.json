@@ -1,5 +1,5 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.pythonProjects": [],
-    "workbench.colorTheme": "Default Light+"
+    "workbench.colorTheme": "Light+"
 }
